@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
   <link rel="stylesheet" href="{{$style.Permalink}}">
   <!-- Basic meta -->
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
   <link rel="shortcut icon" href="/images/fox.png" type="image/x-png">
+  <title>{{ block "title" . }}{{ .Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Page.Params.description }}">
   <!-- OG -->
-  <meta property="og:title" content="{{ .Site.Title }}">
-  <meta property="og:description" content="{{ .Site.Params.description }}">
-  <meta property="og:image" content="https://rhg.dev/banner.png">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Page.Params.description }}">
+  <meta property="og:image" content="https://rhg.dev/images/{{ .Page.Params.image }}.png">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary"></meta>
   <meta name="twitter:creator" content="@rhg_dev" />

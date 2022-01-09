@@ -1,5 +1,6 @@
 ---
 title: "hey! i'm ryan."
+description: "My name is Ryan Haskell-Glatz and this is my personal website. If you are here to play some games or read some blog posts– you've come to the right place!"
 subtitle: "and i build stuff for the web."
 image: "wave"
 date: 2022-01-06T22:38:14-06:00
