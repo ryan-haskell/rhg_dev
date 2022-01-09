@@ -8,11 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
   <link rel="stylesheet" href="{{$style.Permalink}}">
+  <!-- Basic meta -->
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="shortcut icon" href="/images/fox.png" type="image/x-png">
+  <!-- OG -->
   <meta property="og:description" content="{{ .Site.Params.description }}">
   <meta property="og:image" content="/banner.png">
-  <link rel="shortcut icon" href="/images/fox.png" type="image/x-png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:creator" content="@rhg_dev" />
 </head>
 <body>
   {{ partial "navbar.html" }}
