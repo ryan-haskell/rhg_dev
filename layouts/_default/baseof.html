@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="{{$style.Permalink}}">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ .Site.Params.description }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:image" content="/banner.png">
   <link rel="shortcut icon" href="/images/fox.png" type="image/x-png">
 </head>
 <body>
