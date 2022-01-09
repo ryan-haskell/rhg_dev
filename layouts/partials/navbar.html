@@ -1,5 +1,5 @@
 <header>
-  <div class="row fixed z-2 height-nav align-top width-fill align-center fg-light text-shadow">
+  <div style="pointer-events: none" class="row fixed z-2 height-nav align-top width-fill align-center fg-light text-shadow">
     <div class="row width-container gap-fill pad-x-md align-center-y">
       <div class="bubble bubble-left">
         <a class="font-brand invisible" href="/">rhg.dev</a>
@@ -16,9 +16,19 @@
     </div>
   </div>
   <div class="absolute z-4 height-nav align-brand fg-light">
-    <div class="row gap-md align-center-y">
-      <a href="/blog" class="row gap-xs align-center underline font-link">blog</a>
-      <a href="/arcade" class="row gap-xs align-center underline font-link">arcade</a>
+    <div class="row gap-fill align-center-y width-container">
+      <div class="row gap-md align-center-y">
+        <a href="/blog" class="row gap-xs align-center underline font-link">blog</a>
+        <a href="/arcade" class="row gap-xs align-center underline font-link">arcade</a>
+      </div>
+      <div class="row gap-md align-center-y" style="margin-right: 0.5rem">
+        <a class="icon icon-twitch tooltip tooltip--below"
+          href="https://twitch.tv/rhg_dev" target="_blank" rel="noopener"
+          tooltip-content="Twitch" aria-label="Twitch"></a>
+        <a class="icon icon-youtube tooltip tooltip--below"
+          href="https://www.youtube.com/channel/UCVWMy1t-yytSpQ5G6tUtImg" target="_blank" rel="noopener"
+          tooltip-content="YouTube" aria-label="YouTube"></a>
+      </div>
     </div>
   </div>
 </header>
