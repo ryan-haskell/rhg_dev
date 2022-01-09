@@ -5,6 +5,7 @@ description: "Learn how to build a Pokemon clone from scratch! This series walks
 image: "pokeball"
 date: 2022-01-07T14:19:37-06:00
 isSeries: true
+draft: true
 ---
 
 Welcome to the __Jokemon__ series, where I build a Pokemon battle clone from scratch like a champ!
