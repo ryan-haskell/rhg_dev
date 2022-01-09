@@ -2,3 +2,5 @@ baseURL = 'https://rhg.dev'
 languageCode = 'en-us'
 title = 'rhg.dev'
 description = "Hey there, my name is Ryan and this is my personal website. Play games, read articles, and explore!"
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']

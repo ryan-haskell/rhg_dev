@@ -4,12 +4,14 @@
   --color-dark-1: #333;
   --color-dark-2: #35263f;
   --color-dark-3: #666;
+  --color-dark-4: #737373;
   --color-light-1: #fcfcfc;
   --color-light-2: #f0f0f0;
   --color-light-3: #ccc;
 
   --color-fg-1: var(--color-dark-1);
   --color-fg-2: var(--color-dark-3);
+  --color-fg-3: var(--color-dark-4);
 
   --color-bg-1: var(--color-light-1); 
   --color-bg-2: var(--color-light-2); 
@@ -163,6 +165,7 @@ html, body {
 .row.align-center-x { justify-content: center; }
 .row.align-center-y { align-items: center; }
 
+.col.align-left { align-items: flex-start;}
 .col.align-center-x { align-items: center; }
 .col.align-center-y { justify-content: center; }
 
@@ -189,6 +192,9 @@ html, body {
 
 .absolute.align-top,
 .fixed.align-top { top: 0; }
+
+.absolute.align-bottom,
+.fixed.align-bottom { bottom: 0; }
 
 .absolute.align-center-x,
 .fixed.align-center-x {
@@ -263,12 +269,17 @@ html, body {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* MARKDOWN */
 
 .markdown {
   color: --color-fg;
   line-height: 1.5;
   max-width: 60ch;
+  width: 100%;
 }
 
 .markdown p {
@@ -287,6 +298,69 @@ html, body {
   font-family: var(--family-monospace);
 }
 
+.markdown .card {
+  position: relative;
+  display: block;
+  font-weight: var(--weight-normal);
+  margin: 1.5em 0;
+  background-color: var(--color-bg-1);
+  border: solid 1px var(--color-bg-3);
+  padding: 1.5em;
+  border-radius: 0.25em;
+  background: white;
+  transition: box-shadow 200ms ease-in-out, opacity 200ms ease-in-out;
+  box-shadow: 0 0.25em 0.25em rgba(0,0,0, 0.125);
+}
+
+.markdown .card:hover, .markdown .card:focus {
+  background: white;
+}
+
+.card__icon {
+  width: 1em;
+  height: 1em;
+  background-size: contain;
+  background-position: center;
+}
+
+.markdown .card__part {
+  font-size: 0.8em;
+  color: var(--color-fg-3);
+  text-transform: uppercase;
+}
+
+.markdown .card__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: var(--weight-bold);
+  font-size: 1.5em;
+  margin: 0;
+  transition: color 200ms ease-in-out;
+}
+
+.markdown .card__date {
+  color: var(--color-fg-2);
+  /* font-weight: var(--weight-bold); */
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.markdown .card:hover {  
+  box-shadow: 0 0.75em 1em rgba(0,0,0, 0.2);
+}
+
+.markdown .card:hover .card__title {  
+  /* color: var(--color-brand-); */
+}
+
+.markdown .card__subtitle {
+  color: var(--color-fg-2);
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
 .markdown h3 {
   font-family: var(--family-header);
   font-weight: var(--weight-bold);
@@ -294,12 +368,13 @@ html, body {
   position: relative;
   margin-top: 3rem;
   margin-bottom: 2.5rem;
+  line-height: 1.1;
 }
 
 .markdown h3::before {
   content: '';
   position: absolute;
-  bottom: -0.25rem;
+  bottom: -0.6rem;
   border-radius: 1em;
   width: 3em;
   height: 0.25rem;
@@ -438,12 +513,54 @@ html, body {
 
 .invisible { visibility: hidden; }
 
+.arcade-iframe {
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 
-.font-emoji {
+.arcade-iframe iframe {
+  border: 0;
+  border-radius: 0.25rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-width: var(--size-container);
+  background: var(--color-bg-3);
+  /* box-shadow: 0 0.25rem 3rem rgba(255 255 255 / 0.25); */
+}
+
+.button, .markdown a.button, .markdown a.button:hover {
+  background: linear-gradient(to bottom left, var(--color-brand-1), var(--color-brand-2) );
+  color: var(--color-light-1);
+  border-radius: 0.25em;
+  padding: 0.5em 1.5em;
+  font-weight: var(--weight-bold);
+  font-size: 1rem;
+  border: 0;
+  box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.25);
+  text-shadow: 0 0.25em 1em rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.button:hover, .markdown a.button:hover {
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.35);
+}
+
+.markdown br {}
+
+.font-hero-icon {
   width: 4rem;
   height: 4rem;
   background-size: contain;
   background-position: center;
+}
+
+.pixelated {
+  image-rendering: pixelated;
 }
 
 .markdown a:hover,

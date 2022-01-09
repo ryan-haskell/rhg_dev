@@ -1,0 +1,15 @@
+<div class="col gap-sm relative z-3 bg-gradient-1 text-shadow fg-light pad-x-md pad-y-xl align-center-x mobile:sm text-center">
+  {{ if .Params.Series }}
+  <div class="font-hero-icon {{ if .Params.HasPixelImage }}pixelated{{ end }}" style="background-image: url('/images/{{ .Parent.Params.image }}.png')"></div>
+  {{else}}
+  <div class="font-hero-icon {{ if .Params.HasPixelImage }}pixelated{{ end }}" style="background-image: url('/images/{{ .Params.image }}.png')"></div>
+  {{end}}
+  <h1 class="font-title">{{.Params.Title}}</h1>
+  <h2 class="font-subtitle">
+    {{ if .Params.Series }}
+      Part {{.Params.entry}} of the <a href="{{.Parent.Permalink}}" class="underline">{{.Parent.Title}}</a> series
+    {{else}}
+      {{.Params.subtitle}}
+    {{ end }}
+  </h2>
+</div>

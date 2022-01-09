@@ -1,9 +1,8 @@
 ---
 title: "blog"
 subtitle: "ideas from a questionable mind"
-emoji: "writing"
+image: "writing"
 date: 2022-01-06T23:06:14-06:00
-draft: true
 ---
 
 ### Featured post

@@ -1,0 +1,12 @@
+
+{{ partial "hero" . }}
+<main class="row relative z-1 align-center-x">
+  <div class="relative pad-top-lg pad-bottom-xl width-container fg-1 pad-x-md row align-center-x">
+    <div class="markdown">
+      <h3>Latest posts</h3>
+      {{ range .Pages }}
+        {{ partial "preview-card" . }}
+      {{ end }}
+    </div>
+  </div>
+</main>

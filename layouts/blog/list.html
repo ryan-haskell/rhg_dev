@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{ if .Params.isSeries }}
+    {{ partial "series-list" . }}
+  {{ else }}
+    {{ partial "blog-list" . }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,10 @@
+# Config for hosting via https://netlify.com
+[build]
+  publish = "public"
+  command = "hugo"
+
+# Handle 404s with a pretty page
+[[redirects]]
+  status = 404
+  from = "/*"
+  to = "/404.html"

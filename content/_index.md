@@ -1,36 +1,16 @@
 ---
-title: "hey! i'm ryan"
+title: "hey! i'm ryan."
 subtitle: "and i build stuff for the web."
+image: "wave"
 date: 2022-01-06T22:38:14-06:00
-draft: true
 ---
 
 ### Welcome!
 
-My name is Ryan and you've found my personal website. If you are here to [play some games](/arcade) or read some [blog posts](/blog)– you've come to the right place!
+My name is Ryan Haskell-Glatz and this is my personal website. If you are here to [play some games](/arcade) or [read some blog posts](/blog)– you've come to the right place!
 
-I live in __Chicago__ and work remotely as a __Frontend Engineer__ for a NY-based startup called [Blissfully](https://blissfully.com). Although I have a bunch of experience doing fullstack web development, I really enjoy doing frontend work. I also make tiny web-based games to share with friends. 
+I'm a _Frontend Engineer_ living in Chicago and working at a remote-friendly company called [Blissfully](https://blissfully.com). I have experience creating fullstack web applications, but most of my focus is on frontend web development. I also love making web-based games, so I can easily share them with friends.
 
-Every chance I get, I create things with my favorite language, [Elm](https://elm-lang.org). You might know me from the Elm community, which is full of the wonderful people for whom I created a application framework called [elm-spa](https://elm-spa.dev). 
+Every chance I get, I use my favorite language: [Elm](https://elm-lang.org). You might already know me from the Elm community, from my work on [elm-spa](https://elm-spa.dev), an app framework I made. If not, maybe you're here because of all these pretty gradients!
 
-If not, maybe you're here for all these pretty colors! The website you are reading is completely __open source__. That means you can see the entire codebase [on GitHub](https://github.com/ryannhg/rhg-dev). If you like it, be sure to tell me all about it on [Twitter](https://twitter.com/rhg_dev)! I'm perpetually down for good vibes.
-
-### Welcome!
-
-My name is Ryan and you've found my personal website. If you are here to [play some games](/arcade) or read some [blog posts](/blog)– you've come to the right place!
-
-I live in __Chicago__ and work remotely as a __Frontend Engineer__ for a NY-based startup called [Blissfully](https://blissfully.com). Although I have a bunch of experience doing fullstack web development, I really enjoy doing frontend work. I also make tiny web-based games to share with friends. 
-
-Every chance I get, I create things with my favorite language, [Elm](https://elm-lang.org). You might know me from the Elm community, which is full of the wonderful people for whom I created a application framework called [elm-spa](https://elm-spa.dev). 
-
-If not, maybe you're here for all these pretty colors! The website you are reading is completely __open source__. That means you can see the entire codebase [on GitHub](https://github.com/ryannhg/rhg-dev). If you like it, be sure to tell me all about it on [Twitter](https://twitter.com/rhg_dev)! I'm perpetually down for good vibes.
-
-### Welcome!
-
-My name is Ryan and you've found my personal website. If you are here to [play some games](/arcade) or read some [blog posts](/blog)– you've come to the right place!
-
-I live in __Chicago__ and work remotely as a __Frontend Engineer__ for a NY-based startup called [Blissfully](https://blissfully.com). Although I have a bunch of experience doing fullstack web development, I really enjoy doing frontend work. I also make tiny web-based games to share with friends. 
-
-Every chance I get, I create things with my favorite language, [Elm](https://elm-lang.org). You might know me from the Elm community, which is full of the wonderful people for whom I created a application framework called [elm-spa](https://elm-spa.dev). 
-
-If not, maybe you're here for all these pretty colors! The website you are reading is completely __open source__. That means you can see the entire codebase [on GitHub](https://github.com/ryannhg/rhg-dev). If you like it, be sure to tell me all about it on [Twitter](https://twitter.com/rhg_dev)! I'm perpetually down for good vibes.
+The website you are reading is completely __open source__. That means you can see the entire codebase on my [GitHub](https://github.com/ryannhg/rhg-dev). If you like it, be sure to tell me all about it on [Twitter](https://twitter.com/rhg_dev)! I'm _always_ down for compliments and/or good vibes.

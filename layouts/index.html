@@ -1,12 +1,35 @@
 {{ define "main" }}
-    <div class="col gap-sm relative z-3 bg-gradient-1 text-shadow fg-light pad-x-md pad-y-xl align-center-x mobile:sm">
-      <div class="font-emoji wave" style="background-image: url('/emojis/wave.png')"></div>
-      <h1 class="font-title">{{.Params.Title}}</h1>
-      <h2 class="font-subtitle">{{.Params.subtitle}}</h2>
-    </div>
-    <div class="row relative z-1 align-center-x">
-      <div class="relative pad-top-lg pad-bottom-xl width-container fg-1 pad-x-md row align-center-x">
-        <div class="markdown">{{.Content}}</div>
+  <div class="col gap-sm relative z-3 bg-gradient-1 text-shadow fg-light pad-x-md pad-y-xl align-center-x mobile:sm">
+    <div class="font-hero-icon wave" style="background-image: url('/images/wave.png')"></div>
+    <h1 class="font-title">{{.Params.Title}}</h1>
+    <h2 class="font-subtitle">{{.Params.subtitle}}</h2>
+  </div>
+  <main class="row relative z-1 align-center-x">
+    <div class="relative pad-top-lg pad-bottom-xl width-container fg-1 pad-x-md row align-center-x">
+      <div class="markdown">
+        {{.Content}}
+
+        <div class="col gap-sm align-left">
+          <section>
+            <h3>Latest posts</h3>
+            {{ range ( where site.RegularPages "Section" "blog" | first 3 ) }}
+              {{ partial "preview-card" . }}
+            {{ end }}
+          </section>
+          <a class="button" href="/blog">Browse the blog</a>
+        </div>
+
+        <div class="col gap-sm align-left">
+          <section>
+            <h3>Recent games</h3>
+            {{ range ( where site.RegularPages "Section" "arcade" | first 3 ) }}
+              {{ partial "preview-card" . }}
+            {{ end }}
+          </section>
+          <a class="button" href="/arcade">Browse the arcade</a>
+        </div>
+
       </div>
     </div>
+  </main>
 {{ end }}

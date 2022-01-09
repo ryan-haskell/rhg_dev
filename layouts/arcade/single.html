@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ partial "hero" . }}
+  <div class="col gap-md arcade-iframe">
+    <iframe src="{{ .Params.game }}"></iframe>
+    <div class="row gap-md align-center-x">
+      <a href="{{ .Params.game }}" target="_blank" rel="noopener" class="button">Fullscreen</a>
+      <a href="{{ .Params.repo }}" target="_blank" rel="noopener" class="button">Source code</a>
+    </div>
+  </div>
+  <main class="row relative z-1 align-center-x">
+    <div class="relative pad-top-lg pad-bottom-xl width-container fg-1 pad-x-md row align-center-x">
+      <div class="markdown">
+        {{.Content}}
+      </div>
+    </div>
+  </main>
+{{ end }}

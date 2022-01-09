@@ -1,0 +1,10 @@
+<main class="row relative z-1 align-center-x">
+  <div class="relative pad-top-lg pad-bottom-xl width-container fg-1 pad-x-md row align-center-x">
+    <div class="markdown">
+      {{ if eq .Section "blog" }}
+        <p>Published on <strong>{{ partial "date" . }}</strong></p>
+        {{end}}
+      {{.Content}}
+    </div>
+  </div>
+</main>
