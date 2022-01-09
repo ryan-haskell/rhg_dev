@@ -282,7 +282,7 @@ html, body {
   width: 100%;
 }
 
-.markdown p {
+.markdown p, .markdown ol, .markdown ul {
   margin: 1em 0;
   color: var(--color-fg-2);
 }
@@ -293,9 +293,15 @@ html, body {
 }
 .markdown em {  font-style: italic; }
 
-.markdown p code {
+.markdown p code,
+.markdown ol code,
+.markdown ul code {
   color: var(--color-fg-1);
   font-family: var(--family-monospace);
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
 }
 
 .markdown .card {

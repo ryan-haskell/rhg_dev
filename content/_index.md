@@ -13,4 +13,4 @@ I'm a _Frontend Engineer_ living in Chicago and working at a remote-friendly com
 
 Every chance I get, I use my favorite language: [Elm](https://elm-lang.org). You might already know me from the Elm community, from my work on [elm-spa](https://elm-spa.dev), an app framework I made. If not, maybe you're here because of all these pretty gradients!
 
-The website you are reading is completely __open source__. That means you can see the entire codebase on my [GitHub](https://github.com/ryannhg/rhg-dev). If you like it, be sure to tell me all about it on [Twitter](https://twitter.com/rhg_dev)! I'm _always_ down for compliments and/or good vibes.
+I also designed this website from scratch. If you like it, be sure to tell me all about it on [Twitter](https://twitter.com/rhg_dev)! I'm _always_ happy to receive good vibes.
