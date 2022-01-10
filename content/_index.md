@@ -8,7 +8,7 @@ date: 2022-01-06T22:38:14-06:00
 
 ### Welcome!
 
-My name is Ryan Haskell-Glatz and this is my personal website. If you are here to [play some games](/arcade) or [read some blog posts](/blog)– you've come to the right place!
+My name is Ryan Haskell-Glatz and this is my personal website. If you are here to [play some games](/arcade) or [read some blog posts](/blog)– you've come to the right place! {{< pic >}}
 
 I'm a _Frontend Engineer_ living in Chicago and working at a remote-friendly company called [Blissfully](https://blissfully.com). I have experience creating fullstack web applications, but most of my focus is on frontend web development. I also love making web-based games, so I can easily share them with friends.
 
