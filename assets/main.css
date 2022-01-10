@@ -416,6 +416,7 @@ html, body {
   height: 1em;
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .icon-twitter {
