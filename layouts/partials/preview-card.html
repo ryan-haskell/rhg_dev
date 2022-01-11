@@ -15,14 +15,14 @@
     {{ end }}
   </span>
   
-  <h4 class="card__title">
+  <h5 class="card__title">
     {{ if .Params.Series }}
   <div class="card__icon {{ if .Params.HasPixelImage }}pixelated{{ end }}" style="background-image: url('/images/{{ .Parent.Params.image }}.png')"></div>
   {{else}}
   <div class="card__icon {{ if .Params.HasPixelImage }}pixelated{{ end }}" style="background-image: url('/images/{{ .Params.image }}.png')"></div>
   {{end}}
     <span>{{.Title}}</span>
-  </h4>
+  </h5>
   <span class="card__date">{{ partial "date" . }}</span>
   {{ if .Params.description }}
   <p class="card__subtitle">{{.Params.description}}</p>
