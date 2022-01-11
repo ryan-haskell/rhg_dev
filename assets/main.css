@@ -355,6 +355,7 @@ html, body {
   gap: 0.5rem;
   font-weight: var(--weight-bold);
   font-size: 1.5em;
+  background: none;
   margin: 0;
   transition: color 200ms ease-in-out;
 }
