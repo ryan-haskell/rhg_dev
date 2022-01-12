@@ -372,10 +372,6 @@ html, body {
   box-shadow: 0 0.75em 1em rgba(0,0,0, 0.2);
 }
 
-.markdown .card:hover .card__title {  
-  /* color: var(--color-brand-); */
-}
-
 .markdown .card__subtitle {
   color: var(--color-fg-2);
   margin: 0;

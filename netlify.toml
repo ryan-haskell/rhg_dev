@@ -1,7 +1,7 @@
 # Config for hosting via https://netlify.com
 [build]
   publish = "public"
-  command = "hugo"
+  command = "hugo && (cd scripts/seo-image-gen && go run main.go)"
 
 # Handle 404s with a pretty page
 [[redirects]]
