@@ -21,7 +21,7 @@ For all my blog posts, there are three `<meta>` tags I use to tell Twitter how I
 <meta name="twitter:card"
       content="summary" />
 
-<meta name="twitter:creator"
+<meta name="twitter:site"
       content="@rhg_dev" />
 
 <meta name="twitter:image"
@@ -29,7 +29,7 @@ For all my blog posts, there are three `<meta>` tags I use to tell Twitter how I
 ```
 
 - `twitter:card` says I want a small `summary` card, not a big image preview
-- `twitter:creator` attributes this link to my Twitter handle
+- `twitter:site` attributes this link to my Twitter handle
 - `twitter:image` is what the image I want to see in my preview.
 
 ### The big plan
