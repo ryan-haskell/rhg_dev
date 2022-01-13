@@ -3,6 +3,7 @@ title: "Hello, blog!"
 subtitle: "the first post"
 description: "New year, new blog! Read about why I chose Hugo for my blog redesign, and what my goals are for the new site."
 image: "art"
+tags: [ go, hugo ]
 date: 2022-01-09T01:24:24-06:00
 ---
 <!-- 

@@ -1,9 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: "Creating some YouTube tutorials never felt so holly jolly"
+description: "( One of two sentences for use in blog cards, SEO, and social media )"
+tags: [elm]
 
-subtitle: "tis the season of ellie"
-image: "christmas"
+subtitle: "( shows under the hero )"
+image: "wave"
 
 date: {{ .Date }}
 draft: true

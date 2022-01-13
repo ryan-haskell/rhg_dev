@@ -15,7 +15,7 @@
 1. Run `hugo new arcade/<name-of-post>.md` to create a new arcade entry
 
 
-### dynamic banners
+### dynamic seo images
 
 There's a special `scripts` folder that I use to take care of other build stuff, like __generating SEO preview images__ for sharing on Twitter.
 

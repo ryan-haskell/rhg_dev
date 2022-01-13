@@ -378,10 +378,14 @@ html, body {
   margin-top: 0.25rem;
 }
 
+.markdown h3 > code,
+.markdown h4 > code,
 .markdown p > code,
+.markdown strong > code,
 .markdown li > code {
-  font-size: 0.8em;
-  padding: 0.3em 0.3em;
+  font-family: var(--family-monospace);
+  font-size: 0.9em;
+  padding: 0.3em;
   padding-bottom: 0.125em;
   background-color: var(--color-bg-1);
   border: solid var(--color-bg-3) 1px;
@@ -426,6 +430,16 @@ html, body {
   padding: 1.5em;
   border-radius: 0.75em;
   position: relative;
+}
+
+.markdown img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.15);
+  border-radius: 0.5rem;
+  border: 0;
+  background: var(--color-bg-1);
+  margin: 1rem auto;
 }
 
 .markdown iframe {

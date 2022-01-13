@@ -4,16 +4,5 @@ title = 'rhg.dev'
 [params]
   description = "Hey there, my name is Ryan and this is my personal website. Play games, read articles, and explore!"
 
-[outputFormats]
-  [outputFormats.SVG]
-    baseName = 'banner'
-    isPlainText = true
-    mediaType = 'image/svg+xml'
-
-[outputs]
-  home = ['HTML', 'SVG']
-  page = ['HTML', 'SVG']
-  section = ['HTML', 'SVG']
-
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term']

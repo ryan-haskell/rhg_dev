@@ -25,7 +25,20 @@ const CYAN = "\033[36m"
 
 func main() {
 
-	// Step 1: Load background image
+	// Step 1: Load background gradient JPEG
+	bgImage := loadBackgroundImage()
+
+	// Step 2: Make sure the output folder exists
+	ensureOuputFolderExists()
+
+	// Step 3: Create a new file for each PNG image
+	count := createImagesWithBackground(bgImage)
+
+	// Step 4: Print out a success message
+	printSuccessMessage(count)
+}
+
+func loadBackgroundImage() image.Image {
 	bgFile, err := os.Open("backgrounds/square.png")
 	if err != nil {
 		log.Fatalf("failed to open: %s", err)
@@ -37,34 +50,56 @@ func main() {
 	}
 	defer bgFile.Close()
 
-	os.MkdirAll("../../static/gen/banner", os.ModePerm)
+	return bgImage
+}
+
+func ensureOuputFolderExists() {
+	os.MkdirAll("../../static/gen/seo", os.ModePerm)
+}
+
+func createImagesWithBackground(bgImage image.Image) int {
+
+	// Read all files in the "static/images" folder
 	files, err := os.ReadDir("../../static/images")
 	if err != nil {
 		log.Fatalf("failed to read folder: %s", err)
 	}
+
+	// Will track how many files were generated
 	count := 0
+
 	for _, file := range files {
+
+		// Get filename, without extension
 		nameWithExt := file.Name()
 		filename := strings.TrimSuffix(nameWithExt, filepath.Ext(nameWithExt))
+
+		// Ignore non-PNG files
 		if filepath.Ext(nameWithExt) == ".png" {
 			count++
 			createCombinedFile(bgImage, filename)
 		}
 	}
 
-	// Print success message
+	return count
+}
+
+func printSuccessMessage(count int) {
 	log.Printf(
-		"\n\n %s%d%s banner images generated!\n\n",
+		"\n\n %s%d%s SEO images generated!\n\n",
 		GREEN,
 		count,
 		RESET,
 	)
 }
 
+// Creates a single file
 func createCombinedFile(bgImage image.Image, filename string) {
+	// Define input/output paths
 	inputFilepath := fmt.Sprintf("../../static/images/%s.png", filename)
-	outputFilepath := fmt.Sprintf("../../static/gen/banner/%s.jpg", filename)
-	// Step 3: Load foreground image
+	outputFilepath := fmt.Sprintf("../../static/gen/seo/%s.jpg", filename)
+
+	// Load foreground PNG image
 	fgFile, err := os.Open(inputFilepath)
 	if err != nil {
 		log.Fatalf("failed to open: %s", err)
@@ -75,40 +110,45 @@ func createCombinedFile(bgImage image.Image, filename string) {
 	}
 	defer fgFile.Close()
 
-	// Step 4: Describe image dimensions
+	// Describe expected image dimensions
 	bgBounds := image.Rect(0, 0, 256, 256)
 
 	fgOffset := image.Pt(64, 64)
 	fgBounds := image.Rect(0, 0, 128, 128).Add(fgOffset)
 
-	// Step 4: Validate image dimensions
+	// Validate against actual image dimensions
 	actualFgBounds := fgImage.Bounds().Size()
 
+	// Exit with helpful error if a PNG is the wrong size
 	if actualFgBounds.X != 128 || actualFgBounds.Y != 128 {
-		log.Fatalf(
-			"\n\n  Problem with %s./static/images/%s.png%s :\n\n    Expected size %s128x128%s, found %s%dx%d%s\n\n",
-			YELLOW,
-			filename,
-			RESET,
-			GREEN,
-			RESET,
-			CYAN,
-			actualFgBounds.X,
-			actualFgBounds.Y,
-			RESET,
-		)
+		printInvalidImageError(filename, actualFgBounds)
 	}
 
-	// Step 5: Create a composite image
+	// Create a composite image
 	combinedImage := image.NewRGBA(bgBounds)
 	draw.Draw(combinedImage, bgBounds, bgImage, image.Point{}, draw.Src)
 	draw.Draw(combinedImage, fgBounds, fgImage, image.Point{}, draw.Over)
 
-	// Step 6: Write it to the filesystem
+	// Write output to the filesystem
 	combinedFile, err := os.Create(outputFilepath)
 	if err != nil {
 		log.Fatalf("failed to create: %s", err)
 	}
 	jpeg.Encode(combinedFile, combinedImage, &jpeg.Options{Quality: jpeg.DefaultQuality})
 	defer combinedFile.Close()
+}
+
+func printInvalidImageError(filename string, actualBounds image.Point) {
+	log.Fatalf(
+		"\n\n  Problem with %s./static/images/%s.png%s :\n\n    Expected size %s128x128%s, found %s%dx%d%s\n\n",
+		YELLOW,
+		filename,
+		RESET,
+		GREEN,
+		RESET,
+		CYAN,
+		actualBounds.X,
+		actualBounds.Y,
+		RESET,
+	)
 }

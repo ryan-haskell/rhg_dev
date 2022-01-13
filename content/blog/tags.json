@@ -1,0 +1,27 @@
+{
+  "elm": {
+    "name": "Elm",
+    "url": "https://elm-lang.org",
+    "description": "A delightful programming language for building reliable web applications!"
+  },
+  "hugo": {
+    "name": "Hugo",
+    "url": "https://gohugo.io/",
+    "description": "The world's fastest framework for building websites! The site you are on right now is powered by Hugo."
+  },
+  "go": {
+    "name": "Go",
+    "url": "https://go.dev/",
+    "description": "Go is an open source programming language supported by Google. It powers Hugo, the framework that runs this site!"
+  },
+  "youtube": {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/channel/UCVWMy1t-yytSpQ5G6tUtImg",
+    "description": "I post video content on YouTube, because the format is a great way to show how to make something step-by-step."
+  },
+  "netlify": {
+    "name": "Netlify",
+    "url": "https://netlify.com",
+    "description": "The most comprehensive platform for web projects. I use Netlify to host this site and almost _all_ of the projects I share."
+  }
+}
