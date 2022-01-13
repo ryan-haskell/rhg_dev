@@ -239,7 +239,7 @@ html, body {
 
 .brand { font-size: var(--font-brand); }
 
-.pic {
+.markdown .pic {
   float: right;
   width: 10rem;
   height: 10rem;
