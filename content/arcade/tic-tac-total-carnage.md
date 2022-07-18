@@ -12,7 +12,7 @@ hasPixelImage: false
 game: "https://tic-tac-total-carnage.netlify.com/"
 repo: "https://github.com/ryannhg/tic-tac-total-carnage"
 players: "2"
-genre: Local 1v1
+genre: Local multiplayer
 hasControllerSupport: false
 
 # 

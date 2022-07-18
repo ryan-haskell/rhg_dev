@@ -12,7 +12,7 @@ hasPixelImage: true
 game: "https://unblank.rhg.dev"
 repo: "https://github.com/ryannhg/unblank"
 players: "1"
-genre: RPG
+genre: Singleplayer RPG
 hasControllerSupport: false
 
 # 

@@ -12,7 +12,7 @@ hasPixelImage: false
 game: "https://ryannhg.github.io/seven-seas-elm/"
 repo: "https://github.com/ryannhg/seven-seas-elm"
 players: "1"
-genre: Puzzle
+genre: Retro Remake
 hasControllerSupport: false
 
 # 
