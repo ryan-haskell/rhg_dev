@@ -17,7 +17,6 @@ hasControllerSupport: false
 
 # 
 date: 2022-05-10T17:41:45-05:00
-draft: true
 ---
 
 ### How to play
