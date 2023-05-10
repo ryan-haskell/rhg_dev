@@ -17,7 +17,7 @@ I thought if elm-spa was actually useful for building real world applications, I
 
 And so that's what I did!
 
-![A screenshot of the example app's homepage](/images/realworld-homepage.png)
+![A screenshot of the example app's homepage](../realworld-homepage.png)
 
 Here's the complete application, available at [realworld.elm-spa.dev](https://realworld.elm-spa.dev)
 
