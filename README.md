@@ -1,4 +1,4 @@
-# @ryannhg/rhg-dev
+# @ryannhg/rhg_dev
 > My personal website, built with [Hugo](https://gohugo.io/)
 
 ![Screenshot of website](./screenshot.png)
