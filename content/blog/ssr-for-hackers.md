@@ -105,7 +105,7 @@ Here we say Html is one of two things:
 1. A node with attributes and children
 1. Some text we want to render
 
-### making Ssr.Html
+### Making Ssr.Html
 
 In a file at `src/Ssr/Html.elm` let's build an API on top of that data structure:
 
