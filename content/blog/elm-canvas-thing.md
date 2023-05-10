@@ -7,7 +7,7 @@ description: "A small game prototype, with a world that wraps around"
 tags: [ elm, game, rpg ]
 ---
 
-![A screenshot of my the game](./elm-canvas-thing.png)
+![A screenshot of my game](../elm-canvas-thing.png)
 
 ### Introduction
 
@@ -53,7 +53,7 @@ If you have a gamepad, feel free to try it out!
 
 Another cool thing, is that the character animation only required three unique images.
 
-![(pixel-art) a spritesheet for the running dude](./running-dude.jpg)
+![(pixel-art) a spritesheet for the running dude](../running-dude.jpg)
 
 The reason the spritesheet has 6 images, is that it's more performant for me to generate the flipped versions once instead of flip them dynamically once the game is running!
 
