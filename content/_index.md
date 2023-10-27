@@ -10,9 +10,9 @@ date: 2022-01-06T22:38:14-06:00
 
 {{< pic >}} My name is Ryan Haskell-Glatz and this is my personal website. If you are here to [play some games](/arcade) or [read some blog posts](/blog)– you've come to the right place!
 
-My professional experience is creating websites, web applications, and design systems. I also _love_ making games, and recently started learning [Godot](https://godotengine.org) and 3D game development.
-
 I just started my own indie game studio, [Limited Creativity](https://limited-creativity.com). Our first game is [Turbo Champ](https://turbo-champ.com), a fast-pased, arcade game designed to play with friends! 
+
+My professional experience is creating websites, web applications, and design systems. I also _love_ making games, so I'm currently learning [Godot](https://godotengine.org).
 
 In my free time, I'm usually making something with my favorite language: [Elm](https://elm-lang.org). My positive experience with Elm inspired me to make the [Elm Land](https://elm.land) framework. The goal for Elm Land is  to make Elm more accessible for frontend developers coming from React, Vue, or other JS frameworks.
 
