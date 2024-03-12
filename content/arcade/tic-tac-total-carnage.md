@@ -10,7 +10,7 @@ hasPixelImage: false
 
 # game stuff
 game: "https://tic-tac-total-carnage.netlify.com/"
-repo: "https://github.com/ryannhg/tic-tac-total-carnage"
+repo: "https://github.com/ryan-haskell/tic-tac-total-carnage"
 players: "2"
 genre: Local multiplayer
 hasControllerSupport: false

@@ -460,7 +460,7 @@ routes =
     ]
 ```
 
-If you'd like to see the actual implementation for [`Utils.Template` functions](https://github.com/ryannhg/elm-codegen/blob/master/src/Utils/Template.elm) or things like [the `Route.toParser` function](https://github.com/ryannhg/elm-codegen/blob/f047407cc7c37d0eb1e55c6b79fd838e8e731c56/src/Route.elm#L40-L42), you can click those links.
+If you'd like to see the actual implementation for [`Utils.Template` functions](https://github.com/ryan-haskell/elm-codegen/blob/master/src/Utils/Template.elm) or things like [the `Route.toParser` function](https://github.com/ryan-haskell/elm-codegen/blob/f047407cc7c37d0eb1e55c6b79fd838e8e731c56/src/Route.elm#L40-L42), you can click those links.
 
 They're just functions that return `String` values, so I didn't want to get into them too much here!
 
@@ -572,4 +572,4 @@ For example, elm-spa uses the names of items in the `src/Pages` folder to determ
 
 Thanks for reading, hope this post was useful!
 
-Feel free to check out [the project on Github](https://github.com/ryannhg/elm-codegen)!
+Feel free to check out [the project on Github](https://github.com/ryan-haskell/elm-codegen)!

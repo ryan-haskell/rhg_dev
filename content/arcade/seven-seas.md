@@ -9,8 +9,8 @@ image: "pirate-flag"
 hasPixelImage: false
 
 # game stuff
-game: "https://ryannhg.github.io/seven-seas-elm/"
-repo: "https://github.com/ryannhg/seven-seas-elm"
+game: "https://ryan-haskell.github.io/seven-seas-elm/"
+repo: "https://github.com/ryan-haskell/seven-seas-elm"
 players: "1"
 genre: Retro Remake
 hasControllerSupport: false

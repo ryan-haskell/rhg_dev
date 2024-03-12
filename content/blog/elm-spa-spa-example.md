@@ -258,7 +258,7 @@ __One last note on ports:__ The best part about working with Javascript ports is
 
 ### Using utils
 
-Whenever I need a function to work with a particular data structure, I create a new module in the `Utils` folder. For example when I wanted to format dates by turning `Time -> String`, I created a file called [src/Utils/Time.elm](https://github.com/ryannhg/elm-spa-realworld/blob/master/src/Utils/Time.elm) and then implemented the `formatDate` function in one place.
+Whenever I need a function to work with a particular data structure, I create a new module in the `Utils` folder. For example when I wanted to format dates by turning `Time -> String`, I created a file called [src/Utils/Time.elm](https://github.com/ryan-haskell/elm-spa-realworld/blob/master/src/Utils/Time.elm) and then implemented the `formatDate` function in one place.
 
 It's usually a good idea to write a few tests around the functions created within `Utils`. By nature, they are super easy to test with!
 

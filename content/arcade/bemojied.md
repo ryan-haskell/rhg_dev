@@ -10,7 +10,7 @@ hasPixelImage: false
 
 # game stuff
 game: "https://arcade.rhg.dev"
-repo: "https://github.com/ryannhg/fremojied"
+repo: "https://github.com/ryan-haskell/fremojied"
 players: "1"
 genre: Retro Remake
 hasControllerSupport: false

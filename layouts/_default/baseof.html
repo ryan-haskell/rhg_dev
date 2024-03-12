@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   {{ $style := resources.Get "main.css" }}
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
   <link rel="stylesheet" href="{{$style.Permalink}}">
   <!-- Basic meta -->
@@ -17,21 +21,24 @@
   <meta property="og:description" content="{{ .Page.Params.description }}">
   <meta property="og:image" content="https://rhg.dev/gen/seo/{{ .Page.Params.image }}.jpg">
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:card" content="summary">
+  </meta>
   <meta name="twitter:site" content="@rhg_dev" />
   <meta name="twitter:image" content="https://rhg.dev/gen/seo/{{ .Page.Params.image }}.jpg">
 </head>
+
 <body>
   {{ partial "navbar.html" }}
   {{ block "main" . }}{{ end }}
-<footer class="footer row align-center-x">
-  <div class="row gap-fill width-container" style="justify-content: center;">
-    <span>© 2022 Ryan Haskell-Glatz</span>
-    <!-- <div class="row gap-md">
+  <footer class="footer row align-center-x">
+    <div class="row gap-fill width-container" style="justify-content: center;">
+      <span>© 2022 Ryan Haskell-Glatz</span>
+      <!-- <div class="row gap-md">
       <a class="underline" href="https://www.twitter.com/rhg_dev" target="_blank" rel="noopener">twitter</a>
-      <a class="underline" href="https://www.github.com/ryannhg" target="_blank" rel="noopener">github</a>
+      <a class="underline" href="https://www.github.com/ryan-haskell" target="_blank" rel="noopener">github</a>
     </div> -->
-  </div>
-</footer>
+    </div>
+  </footer>
 </body>
+
 </html>

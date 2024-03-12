@@ -53,7 +53,7 @@ Over time, this would get _pretty_ tedious and error-prone. I wanted a solution 
 
 ### Let's solve the problem!
 
-I host my website on [Netlify](https://netlify.com) and it is powered by [Hugo](https://gohugo.io). Any time I make an update to my blog, I push that update to [GitHub](https://github.com/ryannhg). From there, _Netlify_ detects the new change and builds my _Hugo_ project with this command.
+I host my website on [Netlify](https://netlify.com) and it is powered by [Hugo](https://gohugo.io). Any time I make an update to my blog, I push that update to [GitHub](https://github.com/ryan-haskell). From there, _Netlify_ detects the new change and builds my _Hugo_ project with this command.
 
 Because I write my blog posts in __markdown__, I'm also able to store metadata about each post in YAML at the top of the file. This YAML is usually referred to as __"frontmatter"__. Here's a glimpse at what the frontmatter looks like for the blog post you're currently reading:
 
@@ -133,7 +133,7 @@ cd scripts/seo-image-gen
 Next, I created a new _Go_ app in that folder using the `go` CLI:
 
 ```bash
-go mod init github.com/ryannhg/seo-image-gen
+go mod init github.com/ryan-haskell/seo-image-gen
 ```
 
 In _Go_, the `main` function is the entrypoint to the application. That means when we call `go run main.go` later on from the terminal, our program will run the `main` function.
@@ -377,6 +377,6 @@ That means users will __never experience this problem__, because it can't make i
 
 This blog post broke our _Go_ script into small chunks, so I could walk you through how it works. 
 
-If you'd like to see the whole thing in one place, here is [a link to GitHub Gist](https://gist.github.com/ryannhg/ee9bd9970202f9bf7780fb6c88dc4f72) containing all the code.
+If you'd like to see the whole thing in one place, here is [a link to GitHub Gist](https://gist.github.com/ryan-haskell/ee9bd9970202f9bf7780fb6c88dc4f72) containing all the code.
 
 Thanks for reading! Feel free to follow me on Twitter at [@rhg_dev](https://twitter.com/rhg_dev) and let me know if this article was a helpful resource.

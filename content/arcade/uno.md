@@ -10,7 +10,7 @@ hasPixelImage: false
 
 # game stuff
 game: "https://uno.rhg.dev"
-repo: "https://github.com/ryannhg/elm-uno"
+repo: "https://github.com/ryan-haskell/elm-uno"
 players: "1"
 genre: Card game
 hasControllerSupport: false

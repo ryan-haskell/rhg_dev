@@ -21,7 +21,7 @@ This post is just a breakdown of some of the stuff I added in.
 
 ### Terrain generation
 
-I was playing around with simple terrain generation for [another project](https://github.com/ryannhg/elm-terrain-generator). It uses a simple algorithm that just plants forests, water, and villages randomly.
+I was playing around with simple terrain generation for [another project](https://github.com/ryan-haskell/elm-terrain-generator). It uses a simple algorithm that just plants forests, water, and villages randomly.
 
 I still need to connect them with roads and make houses, and all that fun stuff later!
 
@@ -41,7 +41,7 @@ In the long term, I don't have a plan to continue with mobile gameplay, but it's
 
 #### Gamepad support
 
-I recently figured out how to support the Gamepad API in Elm [in another experiment](https://github.com/ryannhg/elm-gamepad-demo).
+I recently figured out how to support the Gamepad API in Elm [in another experiment](https://github.com/ryan-haskell/elm-gamepad-demo).
 
 It's not a lot of code to get working, but it is so rewarding sitting back on the couch and running around with an Xbox 360 controller in the game world.
 
@@ -96,4 +96,4 @@ As you can see, the 2nd and 3rd columns (index 1 and 2) are a bit longer. That's
 
 ### Wanna check it out?
 
-Or checkout the source code in this repo: [https://github.com/ryannhg/elm-canvas-things](https://github.com/ryannhg/elm-canvas-things)
+Or checkout the source code in this repo: [https://github.com/ryan-haskell/elm-canvas-things](https://github.com/ryan-haskell/elm-canvas-things)

@@ -272,6 +272,6 @@ That results in something like this:
 
 ### Want more details?
 
-You can check out the source code for my old website on GitHub: [https://github.com/ryannhg/rhg-dev](https://github.com/ryannhg/rhg-dev)
+You can check out the source code for my old website on GitHub: [https://github.com/ryan-haskell/rhg-dev](https://github.com/ryan-haskell/rhg-dev)
 
 Thanks for reading!
